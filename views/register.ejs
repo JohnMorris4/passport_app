@@ -1,0 +1,27 @@
+<%- include('includes/header') %>
+<div class="container">
+
+      <form method="post" action="/users/register" class="form-signin">
+        <h2 class="form-signin-heading text-center">User Register</h2>
+        <label  class="sr-only">Name</label>
+        <input type="text" name="name" class="form-control" placeholder="Name" required autofocus>
+        <br>
+        <label  class="sr-only">Email</label>
+        <input type="text" name="email" class="form-control" placeholder="Email" required autofocus>
+        <br>
+        <label  class="sr-only">User Name</label>
+        <input type="text" name="username" class="form-control" placeholder="Username" required autofocus>
+        <br>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="password" class="form-control" placeholder="Password" required>
+        <label for="inputPassword" class="sr-only">Confirm Password</label>
+        <input type="password" name="password2" class="form-control" placeholder="Password Confirm" required>
+        <p>No Account? <a href="/users/register"> Register </a> </p>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+
+    </div> <!-- /container -->
+
+
+
+<%- include('includes/footer') %>

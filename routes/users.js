@@ -36,6 +36,7 @@ router.post('/register', function(req, res){
     req.checkBody('password2', 'Confirm Password does not match').equals(req.body.password);
 
     //Check for errors
+    //var errors = yield req.getValidationResult();
     var errors = req.validationErrors();
     if(errors){
         console.log('form has errors');

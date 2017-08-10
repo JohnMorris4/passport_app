@@ -1,6 +1,10 @@
 <%- include('includes/header') %>
-<div class="container">
-
+<div class="container reg-page">
+      <% if (locals.errors) { %>
+        <% errors.forEach(function (error){ %>
+            <div class="alert alert-danger"><%= error.msg %></div>
+        <% }) %>
+      <% } %>
       <form method="post" action="/users/register" class="form-signin">
         <h2 class="form-signin-heading text-center">User Register</h2>
         <label  class="sr-only">Name</label>
